@@ -1,0 +1,231 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/* Global */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height:38px;
+    background:#e8491d;
+    border:0;
+    padding-left:20px;
+    padding-right:20px;
+    color:#ffffff;
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:12px;
+}
+
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 18px 0 18px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+/* Showcase/ Home Page Only*/
+#showcase{
+    min-height: 400px;
+    background:url('../images/condofront.jpg') no-repeat 0 -200px;
+    background-size:cover;
+    text-align:center;
+    color:#ffffff;
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+    font-size:20px;
+}
+
+/* Email prompt */
+#moreInfo{
+    padding:15px;
+    color:#ffffff;
+    background:#35424a;
+}
+
+#moreInfo h1{
+    float:left;
+}
+
+#moreInfo form{
+    float:right;
+    margin-top:15px;
+}
+
+#moreInfo input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250;
+}
+
+#moreInfo input[name="fname"]{
+    padding:4px;
+    height:25px;
+    width:250;
+}
+
+#moreInfo input[name="lname"]{
+    padding:4px;
+    height:25px;
+    width:250;
+}
+#moreInfo input[name="comment"]{
+    padding:4px;
+    height:25px;
+    width:250;
+    
+}
+
+/* Boxes/ Bottom of Home Page */
+#boxes{
+    margin-top:20px;
+} 
+
+#boxes .box{
+    float:left;
+    text-align:center;
+    width:30%;
+    padding:10px;
+}
+
+#boxes .box img{
+    width:90px;
+    display:inline;
+}
+
+/* Sidebar/ Aboutus Page */
+aside#sidebar .dark{
+  float:right;
+  width:30%;
+  margin-top:20px;  
+}
+
+article#main-about{
+    float:left;
+    width: 65%;
+}
+#maps iframe {
+    float:left;
+    width: 30%;
+    margin-top:10px;
+}
+.dark a {
+    color:#e8491d;
+    
+}
+/* Photo Gallery Page */
+
+#gallery h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slides{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    margin: 5% auto 20% auto;
+    box-sizing: flex;
+}
+.slide-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+.slide-box img{
+    width:100%;
+    height: 80%;
+    object-fit: flex;
+    transition: .5s;
+}
+.slide-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.slides:hover .active{
+    flex-basis: 0;
+}
+.slide-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+
+/* FOOTER */
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align:center;
+}
+
+footer span{
+    font-weight:normal;
+    font-style:oblique;
+}
+
